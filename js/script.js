@@ -18,6 +18,8 @@ form.addEventListener('submit',(e)=>{
 const getData=async(word)=>{
 
     try{
+
+        result.innerHTML = "Fetching Data.........";
     const res = await fetch(`https://api.dictionaryapi.dev/api/v2/entries/en/${word}`);
     const data = await res.json();
     console.log(data);

@@ -82,3 +82,13 @@ footer{
     padding: 3px;
     margin-left: 20px;
 }
+
+@media screen and (max-width:350px){
+    main form{
+        flex-direction: column;
+    }
+    main form button{
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
