@@ -78,3 +78,7 @@ footer{
     background-color: #008080;
     color: #fff;
 }
+.result li{
+    padding: 3px;
+    margin-left: 20px;
+}

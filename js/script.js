@@ -47,11 +47,17 @@ if(data[0].phonetics.length===0){
 }
 else{
     for(let i=0;i<data[0].phonetics.length;i++){
+
+        if(data[0].phonetics[i].audio.length===0){
+            result.innerHTML += '';
+        }
+        else{
         result.innerHTML +=`Audio :  <audio controls>
         <source src=${data[0].phonetics[i].audio} type="audio/ogg">
         
         Your browser does not support the audio tag.
       </audio>`
+        }
     }
 }
 
